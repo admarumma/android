@@ -82,4 +82,9 @@ public class MainActivity extends AppCompatActivity implements ContactAdapter.On
         intent.putExtra("phone", contacts[position].getPhoneNumber());
         startActivity(intent);
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 }
